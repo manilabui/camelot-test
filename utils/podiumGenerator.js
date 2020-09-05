@@ -9,13 +9,17 @@ export default (podiumComponent) => {
 
 	const activateMedal = () => setIsSelected(!isSelected);
 
+	const gradientColors = isSelected 
+		? ['rgba(200,70,0,0)', '#e36b07'] 
+		: ['transparent', 'transparent'];
+
 	return (
 		<View style={isSelected ? styles.active : styles.disabled}>
 			<TouchableOpacity style={styles.medalContainer} onPress={activateMedal}>
 				<LinearGradient
-	        colors={['rgba(200,70,0,0)', '#e36b07']}
+				  colors={gradientColors}
 	        style={styles.gradient}
-	      >	
+	      >
 				<Image source={require('../assets/bronzeBanner.png')} />
 				{podiumComponent}
 				</LinearGradient>
