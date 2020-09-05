@@ -1,0 +1,12 @@
+{
+  "name": "camelot",
+  "displayName": "camelot",
+  "expo": {
+    "name": "camelot",
+    "slug": "camelot",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
