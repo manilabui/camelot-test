@@ -11,6 +11,7 @@ export default function App() {
   const podiumThree = <Image source={require('./assets/podium3.png')} />;
   const podiumFour = <Image source={require('./assets/podium4.png')} />;
   const podiumFive = <Image source={require('./assets/podium5.png')} />;
+  const podiumSix = <Image source={require('./assets/podium6.png')} />;
 
   return (
     <View style={styles.container}>
@@ -27,6 +28,7 @@ export default function App() {
         {podiumGenerator(podiumThree)}
         {podiumGenerator(podiumFour)}
         {podiumGenerator(podiumFive)}
+        {podiumGenerator(podiumSix)}
         </View>
       </ScrollView>
       </LinearGradient>
